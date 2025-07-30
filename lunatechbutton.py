@@ -17,10 +17,15 @@ def window():
     label.setGeometry(250, 180, 100, 30)    
     label.move(250, 180)
 
+    searchbox = QtWidgets.QLineEdit(win)
+    searchbox.setPlaceholderText("Enter your search here")
+    searchbox.setGeometry(250, 220, 200, 30)
+       
+
     b1= QtWidgets.QPushButton(win)
     b1.setText("Enter")
     b1.move(250, 220)
-    b1.setGeometry(250, 220, 100, 30)
+    b1.setGeometry(250, 280, 200, 30)
     b1.clicked.connect(open_url)
 
     
